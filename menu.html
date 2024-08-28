@@ -3,50 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagen de Fondo</title>
+    <title>EL PAPALOY - Menú</title>
     <style>
         body {
             background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
             margin: 0;
-            color: white; /* Asegura que el texto sea blanco */
-            flex-direction: column; /* Alinea los elementos en columna */
+            padding: 0;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        h1, h2 {
-            margin: 0; /* Elimina el margen de los títulos */
-            color: white; /* Color del texto */
+        .container {
+            padding: 20px;
+            max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+            margin: 0 auto;
         }
         h1 {
-            font-size: 4em; /* Tamaño de letra más grande */
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
-        h2 {
-            font-size: 2em; /* Tamaño de letra para la segunda leyenda */
+        .menu-section {
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin: 20px 0;
         }
-        button {
-            margin-top: 20px; /* Espacio entre el botón y el contenido anterior */
-            padding: 10px 20px;
-            font-size: 1em;
+        .menu-section h2 {
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between; /* Espacia los elementos entre el título y el precio */
+            margin-bottom: 10px;
+            padding: 5px 0;
+        }
+        a {
             color: white;
-            background-color: #333;
-            border: none;
-            cursor: pointer;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
         }
-        button:hover {
-            background-color: #555;
+        a:hover {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <h1>El Papaloy</h1>
-    <h2>Estamos Trabajando</h2>
-    <img src="fondo.jpeg" alt="Imagen de Fondo">
-    <button onclick="window.location.href='index.html'">Regresar a la Página Principal</button>
+    <div class="container">
+        <h1>Menú de EL PAPALOY</h1>
+
+        <div class="menu-section">
+            <h2>Desayuno</h2>
+            <div class="menu-item">
+                <span>Chilaquiles con Cecina</span>
+                <span>$90</span>
+            </div>
+            <div class="menu-item">
+                <span>Chilaquiles con Arrachera</span>
+                <span>$110</span>
+            </div>
+            <div class="menu-item">
+                <span>Sope</span>
+                <span>$55</span>
+            </div>
+            <div class="menu-item">
+                <span>Sope VIP (Con guisado y queso)</span>
+                <span>$55</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Entradas</h2>
+            <div class="menu-item">
+                <span>Chicharrón con queso</span>
+                <span>$80</span>
+            </div>
+            <div class="menu-item">
+                <span>Chicharrón X2 de queso</span>
+                <span>$130</span>
+            </div>
+            <div class="menu-item">
+                <span>Orden de papas</span>
+                <span>$35</span>
+            </div>
+            <div class="menu-item">
+                <span>Orden de papas con truco</span>
+                <span>$60</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Especialidad de la Casa</h2>
+            <div class="menu-item">
+                <span>Plato de Arrachera (250g) para 2</span>
+                <span>$180</span>
+            </div>
+            <div class="menu-item">
+                <span>Plato de Arrachera (250g) parad 2 c/queso </span>
+                <span>$200</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Tacos</h2>
+            <div class="menu-item">
+                <span>Cecina natural</span>
+                <span>$30 +8 c/queso</span>
+            </div>
+            <div class="menu-item">
+                <span>Cecina Enchilada</span>
+                <span>$30 +8 c/queso</span>
+            </div>
+            <div class="menu-item">
+                <span>Longaniza Roja</span>
+                <span>$30 +8 c/queso</span>
+            </div>
+            <div class="menu-item">
+                <span>Longaniza Verde</span>
+                <span>$30 +8 c/queso</span>
+            </div>
+            <div class="menu-item">
+                <span>Arrachera</span>
+                <span>$30 +8 c/queso</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Especialidades</h2>
+            <div class="menu-item">
+                <span>La Costra</span>
+                <span>$55</span>
+            </div>
+            <div class="menu-item">
+                <span>El Wahabí</span>
+                <span>$40</span>
+            </div>
+            <div class="menu-item">
+                <span>El Jalapa</span>
+                <span>$45</span>
+            </div>
+            <div class="menu-item">
+                <span>El Regio</span>
+                <span>$45</span>
+            </div>
+            <div class="menu-item">
+                <span>El Volcán</span>
+                <span>$38</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="menu-item">
+                <span>Refrescos (Coca, Fanta)</span>
+                <span>$25</span>
+            </div>
+            <div class="menu-item">
+                <span>Agua Sabor</span>
+                <span>$25</span>
+            </div>
+            <div class="menu-item">
+                <span>Chela (XX, Victoria)</span>
+                <span>$40</span>
+            </div>
+            <div class="menu-item">
+                <span>Michalada</span>
+                <span>$15</span>
+            </div>
+            <div class="menu-item">
+                <span>Clamato</span>
+                <span>$25</span>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Postres</h2>
+            <div class="menu-item">
+                <span>Topiaca</span>
+                <span>$35</span>
+            </div>
+            <div class="menu-item">
+                <span>Triangulito Fresh</span>
+                <span>$35</span>
+            </div>
+            <div class="menu-item">
+                <span>Flan Napolitano</span>
+                <span>$40</span>
+            </div>
+            <div class="menu-item">
+                <span>Pan de Elote</span>
+                <span>$40</span>
+            </div>
+            <div class="menu-item">
+                <span>Pan de Elote c/rompope</span>
+                <span>$50</span>
+            </div>
+        </div>
+
+        <a href="index.html">Regresar al Inicio</a> <!-- Enlace para regresar al inicio -->
+    </div>
 </body>
 </html>
