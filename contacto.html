@@ -14,10 +14,14 @@
             padding: 0;
         }
         h1 {
-            margin-top: 20%;
+            margin-top: 5%;
         }
         p {
             margin: 10px 0;
+        }
+        .address {
+            margin: 10px auto;
+            white-space: pre-line;
         }
         a {
             color: white;
@@ -25,17 +29,41 @@
             border: 2px solid white;
             padding: 10px 20px;
             border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
         }
         a:hover {
             background-color: white;
             color: black;
+        }
+        iframe {
+            width: 30%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Contáctanos</h1>
     <p><strong>Teléfono:</strong> +52 55 1234 5678</p>
-    <p><strong>Dirección:</strong> Av. Siempre Viva 742, Ciudad de México</p>
-    <a href="index.html">Regresar al Inicio</a>
+    <p class="address">
+        <strong>Dirección:</strong><br>
+        Blvd. Av. Adolfo López Mateos 1222, San Salvador Tizatlali,<br>
+        52172 Metepec, Méx.
+    </p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15042.055278625374!2d-99.5888889!3d19.2671111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE2JzAxLjYiTiA5OcKwMzUnMjAuMCJX!5e0!3m2!1ses!2smx!4v1694012932285!5m2!1ses!2smx" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+    <div class="button-container">
+        <a href="index.html">Regresar al Inicio</a>
+    </div>
 </body>
 </html>
